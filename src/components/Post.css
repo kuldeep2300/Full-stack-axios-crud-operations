@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Urbanist";
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.card-container {
+  width: 150rem;
+  margin: 0 auto;
+  padding: 1rem 3rem 4rem 3rem;
+  transition: all 0.3s linear;
+}
+
+.grid {
+  display: grid;
+}
+
+.grid-three--cols {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+}
+
+.input-field {
+  width: 54rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  background-color: #232f3e;
+  margin-top: 4rem;
+  height: 6rem;
+  margin-bottom: 4rem;
+  border-radius: 0.5rem;
+  padding: 0 1rem;  
+}
+
+.input-container {
+  display: flex;
+  justify-content: center;
+}
+
+input {
+  /* height: 3rem; */
+  padding: 0.8rem 1rem;
+  outline: none;
+  border: none;
+  width: auto;
+  border-radius: 0.2rem;
+  font-size: 1.6rem;
+}
+
+button {
+  width: 8rem;
+  margin-left: 1rem;
+  height: 3rem;
+  outline: none;
+  border: none;
+  border-radius: 0.2rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: all 0.3s linear;
+}
+
+.button-div {
+  margin: 2rem 0rem;
+  color: #000000;
+}
+
+.btn-1 {
+  background-color: #18db9a;
+}
+
+.btn-2 {
+  background-color: #e84b3b;
+}
+
+.btn-1:hover {
+  background-color: hsl(160, 80%, 48%);
+  color: hsl(0, 0%, 100%);
+  box-shadow: rgb(9, 172, 115) 0px 7px 19px 0px;
+}
+
+.btn-2:hover {
+  background-color: hsl(0, 80%, 48%);
+  color: hsl(0, 0%, 100%);
+  box-shadow: rgb(255, 3, 3) 0px 2px 19px 3px;
+}
+
+li {
+  list-style: none;
+}
+
+.id {
+  margin-bottom: 1rem;
+}
+
+.list-item {
+  background-color: #202f3b;
+  color: white;
+  padding: 1rem;
+  border-radius: 0.3rem;
+  font-size: 1.6rem;
+  box-shadow: -0.2rem 0rem 0rem 0px #ffffff;
+  min-height: 23.6rem;
+  max-height: 40.6rem;
+  transition: all 0.3s linear;
+}
+
+.item-para,
+button {
+  line-height: 1.15;
+  letter-spacing: 0.1rem;
+}
+
+/*? Media queries */
+
+@media (width <= 1460px) {
+  .card-container {
+    width: auto;
+    padding: 0rem 4rem;
+  }
+
+  .grid-three--cols {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (width <= 565px ) {
+    .card-container {
+      width: auto;
+      padding: 0rem 4rem;
+    }
+
+    .input-field {
+        margin: 1rem 0rem 3rem 0rem;
+        height: 15rem;
+        width: fit-content;
+        flex-direction: column;
+    }
+  
+    .grid-three--cols {
+      grid-template-columns: 1fr;
+    }
+  }
+  
