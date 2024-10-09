@@ -2,6 +2,11 @@
 import { useEffect, useState } from "react";
 import "./Post.css";
 import { postData, updatePost } from "../api/PostApi";
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also use <link> for styles
+// ..
+AOS.init();
+
 
 export const Form = ({
   apiData,
@@ -39,9 +44,8 @@ export const Form = ({
       if (res.status === 201) {
         if (addData.title && addData.body) {
           setApiData([...apiData, res.data]);
-        }
-        else{
-          alert("Please Fill the Input Fields First!")
+        } else {
+          alert("Please Fill the Input Fields First!");
         }
 
         setAddData({
@@ -96,7 +100,7 @@ export const Form = ({
   }, [updateApiData]);
 
   return (
-    <form className="input-field" onSubmit={handleFormSubmit}>
+    <form className="input-field" onSubmit={handleFormSubmit} data-aos="fade-down" data-aos-delay="10">
       <input
         type="text"
         name="title"

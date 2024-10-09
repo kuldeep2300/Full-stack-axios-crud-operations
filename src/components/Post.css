@@ -137,11 +137,11 @@ button {
 @media (width <= 565px ) {
     .card-container {
       width: auto;
-      padding: 0rem 4rem;
+      padding: 4rem;
     }
 
     .input-field {
-        margin: 1rem 0rem 3rem 0rem;
+        margin: 3rem 0rem 3rem 0rem;
         height: 15rem;
         width: fit-content;
         flex-direction: column;
