@@ -38,19 +38,3 @@ The app utilizes animations and responsiveness, ensuring a seamless experience a
   - Animation libraries (e.g., CSS animations or libraries like Framer Motion) for a smooth and engaging experience.
 
 ---
-
-## Demo
-
-A live demo of the project can be accessed here:  
-[Link to Demo]
-
----
-
-## Installation
-
-To run this project locally, follow these steps:
-
-1. Clone the repository:
-
-   ```bash
-   git clone <repository-link>
